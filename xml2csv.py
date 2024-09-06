@@ -74,7 +74,7 @@ def get_host_data(root):
                 try:
                     service = port.findall('service')[0].attrib['name']
                 except (IndexError, KeyError):
-                    service = ''
+                    service = 'Unknown'
                 try:
                     product = port.findall('service')[0].attrib['product']
                 except (IndexError, KeyError):
